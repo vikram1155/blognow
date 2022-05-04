@@ -1,27 +1,37 @@
 {
-    "name": "mernapp",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "engines": {
-        "node": "14.17.6"
-    },
-    "scripts": {
-        "start": "nodemon backend/server.js",
-        "client": "npm start --prefix frontend",
-        "dev": "concurrently \"npm start\" \"npm run client\"",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
-    },
-    "author": "vikram",
-    "license": "ISC",
-    "dependencies": {
-        "bcryptjs": "^2.4.3",
-        "concurrently": "^7.1.0",
-        "dotenv": "^16.0.0",
-        "express": "^4.17.3",
-        "express-async-handler": "^1.2.0",
-        "jsonwebtoken": "^8.5.1",
-        "mongoose": "^6.2.11",
-        "nodemon": "^2.0.15"
-    }
+  "name": "mernapp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "engines": {
+    "node": "14.17.6"
+  },
+  "scripts": {
+    "start": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "vikram",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.1.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.11",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikram1155/mern.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/vikram1155/mern/issues"
+  },
+  "homepage": "https://github.com/vikram1155/mern#readme",
+  "description": ""
 }
