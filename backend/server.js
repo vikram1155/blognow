@@ -53,3 +53,9 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`Server running at ${PORT}`));
+
+
+
+
+// ,
+// "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
